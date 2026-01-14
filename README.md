@@ -13,7 +13,7 @@ De applicatie kan de  volgende soorten dingens doen:
 - Controleren of er nog plaatsen beschikbaar zijn  
 - Boardinglijsten genereren voor passagiers  
 
----
+
 
 -	Hoe ik de projext heb op gebouwd:
 De code is opgesplitst in verschillende packages:
@@ -33,14 +33,14 @@ De code is opgesplitst in verschillende packages:
 - E. Ticket
   Bevat informatie over het ticket, de passagier en de klasse.
 
----
+
 
 Over de  Boardinglijst  -->
 Voor elke passagier met een ticket kan er een boardinglijst worden aangemaakt.  
 Deze boardinglijst wordt opgeslagen als een tekstbestand en bevat de belangrijkste gegevens van de reis en de passagier.
 
----
 
-## Gebruikte bronnen
+
+- Gebruikte bronnen
 - Canvas cursus uit de verschillende modules   
 - ChatGPT (hulp bij  foutmeldingen)   
