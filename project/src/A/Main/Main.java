@@ -40,7 +40,7 @@ public class Main {
                 case 3 -> verkoopTicket();
                 case 4 -> printBoardingLijsten();
                 case 0 -> stoppen = true;
-                default -> System.out.println("❌ Ongeldige keuze");
+                default -> System.out.println("Ongeldige keuze");
             }
         }
 
@@ -76,7 +76,7 @@ public class Main {
         Passagier passagier = new Passagier(voornaam, achternaam, rrn, geboorte);
         passagiers.add(passagier);
 
-        System.out.println("✅ Passagier geregistreerd.");
+        System.out.println("Passagier geregistreerd.");
     }
 
     // ================= REIS =================
@@ -130,19 +130,19 @@ public class Main {
         // Reis maken
         reis = new Reis(vertrek, aankomst, tijdstip, trein, personeelsleden);
 
-        System.out.println("✅ Reis aangemaakt.");
+        System.out.println("Reis aangemaakt.");
     }
 
     // ================= TICKET =================
     private static void verkoopTicket() {
 
         if (reis == null) {
-            System.out.println("❌ Maak eerst een reis aan.");
+            System.out.println("Maak eerst een reis aan.");
             return;
         }
 
         if (passagiers.isEmpty()) {
-            System.out.println("❌ Geen passagiers geregistreerd.");
+            System.out.println("Geen passagiers geregistreerd.");
             return;
         }
 
@@ -158,11 +158,11 @@ public class Main {
         Ticket ticket = reis.verkoopTicket(passagier, klasse);
 
         if (ticket != null) {
-            System.out.println("✅ Ticket verkocht.");
+            System.out.println("Ticket verkocht.");
             // Boardinglijst meteen maken voor deze passagier
             reis.printBoardingLijstVoorTicket(ticket);
         } else {
-            System.out.println("❌ Geen plaats meer beschikbaar.");
+            System.out.println("Geen plaats meer beschikbaar.");
         }
     }
 
@@ -170,10 +170,10 @@ public class Main {
     private static void printBoardingLijsten() {
 
         if (reis == null) {
-            System.out.println("❌ Geen reis beschikbaar.");
+            System.out.println("Geen reis beschikbaar.");
             return;
         }
 
-        System.out.println("📄 Boardinglijsten worden aangemaakt bij ticketverkoop.");
+        System.out.println("Boardinglijsten worden aangemaakt bij ticketverkoop.");
     }
 }
