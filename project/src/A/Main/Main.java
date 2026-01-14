@@ -24,7 +24,7 @@ public class Main {
     // Er kan maar 1 actieve reis zijn
     private static Reis reis = null;
 
-    // ================= MAIN =================
+    // MAIN
     public static void main(String[] args) {
 
         boolean stoppen = false;
@@ -47,7 +47,7 @@ public class Main {
         System.out.println("Programma afgesloten.");
     }
 
-    // ================= MENU =================
+    // MENU
     private static void toonMenu() {
         System.out.println("\n--- EUROMOON MENU ---");
         System.out.println("1. Registreer passagier");
@@ -58,7 +58,7 @@ public class Main {
         System.out.print("Keuze: ");
     }
 
-    // ================= PASSAGIER =================
+    // PASSAGIER
     private static void registreerPassagier() {
 
         System.out.print("Voornaam: ");
@@ -79,7 +79,7 @@ public class Main {
         System.out.println("Passagier geregistreerd.");
     }
 
-    // ================= REIS =================
+    // REIS
     private static void maakReisAan() {
 
         System.out.print("Vertrekstation: ");
@@ -133,7 +133,7 @@ public class Main {
         System.out.println("Reis aangemaakt.");
     }
 
-    // ================= TICKET =================
+    // TICKET
     private static void verkoopTicket() {
 
         if (reis == null) {
@@ -153,8 +153,7 @@ public class Main {
         int klasse = scanner.nextInt();
         scanner.nextLine();
 
-        // !!! BELANGRIJK !!!
-        // verkoopTicket geeft NU een Ticket terug
+        // geeft een Ticket terug
         Ticket ticket = reis.verkoopTicket(passagier, klasse);
 
         if (ticket != null) {
@@ -166,7 +165,7 @@ public class Main {
         }
     }
 
-    // ================= BOARDINGLIJST =================
+    // BOARDINGLIJST
     private static void printBoardingLijsten() {
 
         if (reis == null) {
