@@ -4,7 +4,7 @@ import B.Personen.Passagier;
 import B.Personen.PersoonsLid;
 import C.Trein.*;
 import D.Reis.Reis;
-import Ticket.Ticket;
+import E.Ticket.Ticket;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package Ticket;
+package E.Ticket;
 
 import B.Personen.Passagier;
 import D.Reis.Reis;

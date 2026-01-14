@@ -3,7 +3,7 @@ package D.Reis;
 import B.Personen.Passagier;
 import B.Personen.PersoonsLid;
 import C.Trein.Trein;
-import Ticket.Ticket;
+import E.Ticket.Ticket;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
