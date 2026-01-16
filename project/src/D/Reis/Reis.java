@@ -4,7 +4,6 @@ import B.Personen.Passagier;
 import B.Personen.PersoonsLid;
 import C.Trein.Trein;
 import E.Ticket.Ticket;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +12,6 @@ import java.io.IOException;
 
 public class Reis {
 
-    // ========================
-    // VELDEN (eigenschappen)
-    // ========================
     private String vertrekStation;
     private String aankomstStation;
     private LocalDateTime tijdstip;
@@ -23,9 +19,7 @@ public class Reis {
     private List<PersoonsLid> personeelsleden;
     private List<Ticket> tickets;
 
-    // ========================
-    // CONSTRUCTOR
-    // ========================
+
     public Reis(String vertrekStation,
                 String aankomstStation,
                 LocalDateTime tijdstip,
@@ -40,9 +34,9 @@ public class Reis {
         this.tickets = new ArrayList<>();
     }
 
-    // ========================
+
     // PERSONEEL
-    // ========================
+
     public void voegPersoneelsLidToe(PersoonsLid lid) {
         personeelsleden.add(lid);
     }
@@ -71,9 +65,9 @@ public class Reis {
         return telBestuurders() >= 1 && telStewards() >= 3;
     }
 
-    // ========================
+
     // TICKET VERKOOP
-    // ========================
+
     public Ticket verkoopTicket(Passagier passagier, int klasse) {
 
         int verkocht = 0;
@@ -87,6 +81,7 @@ public class Reis {
         }
 
         // Bepaal capaciteit
+
         if (klasse == 1) {
             capaciteit = trein.getTotaleEersteKlassePlaatsen();
         } else if (klasse == 2) {
@@ -105,9 +100,9 @@ public class Reis {
         return null;
     }
 
-    // ========================
+
     // BOARDINGLIJST
-    // ========================
+
     public void printBoardingLijstVoorTicket(Ticket ticket) {
 
         Passagier p = ticket.getPassagier();
@@ -133,10 +128,10 @@ public class Reis {
             writer.write("Klasse: " + (ticket.getKlasse() == 1 ? "Eerste klasse" : "Tweede klasse") + "\n");
             writer.write("====================================\n");
 
-            System.out.println("✅ Boardinglijst aangemaakt voor " + p.getFullName());
+            System.out.println("Boardinglijst aangemaakt voor " + p.getFullName());
 
         } catch (IOException e) {
-            System.out.println("❌ Kan boardinglijst niet aanmaken");
+            System.out.println("Kan boardinglijst niet aanmaken");
         }
     }
 }

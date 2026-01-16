@@ -5,7 +5,6 @@ import B.Personen.PersoonsLid;
 import C.Trein.*;
 import D.Reis.Reis;
 import E.Ticket.Ticket;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -17,11 +16,12 @@ public class Main {
     // Scanner voor invoer
     private static Scanner scanner = new Scanner(System.in);
 
+
     // Lijsten om alles bij te houden
     private static List<Passagier> passagiers = new ArrayList<>();
     private static List<PersoonsLid> personeelsleden = new ArrayList<>();
 
-    // Er kan maar 1 actieve reis zijn
+    // Je kunt, maar 1 keer een reis per keer aanmaken
     private static Reis reis = null;
 
     // MAIN

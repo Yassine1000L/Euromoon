@@ -1,6 +1,7 @@
-Dit project is een makkelijke en simpele  command line Java applicatie voor de treinmaatschappij Euromoon.  
-Het project is gemaakt voor het vak Programming Advanced en dient als proof of concept.
-Met de applicatie kan je passagiers registreren, reizen aanmaken, tickets verkopen en boardinglijsten genereren.
+Dit project is een makkelijke en simpele  command line Java applicatie voor de treinmaatschappij 
+Euromoon. Het project is gemaakt voor het vak Programming Advanced en dient als proof of concept.
+Met de applicatie kan je passagiers registreren, reizen aanmaken, tickets verkopen en boardinglijsten
+genereren.
 
 
 -	Wat kan de applicatie?
@@ -37,7 +38,8 @@ De code is opgesplitst in verschillende packages:
 
 Over de  Boardinglijst  -->
 Voor elke passagier met een ticket kan er een boardinglijst worden aangemaakt.  
-Deze boardinglijst wordt opgeslagen als een tekstbestand en bevat de belangrijkste gegevens van de reis en de passagier.
+Deze boardinglijst wordt opgeslagen als een tekstbestand en bevat de belangrijkste gegevens van de reis en 
+de passagier.
 
 
 

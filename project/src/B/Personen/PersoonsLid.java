@@ -3,6 +3,7 @@ package B.Personen;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+
 public class PersoonsLid extends Persoon {
 
     private List<String> certificaties;

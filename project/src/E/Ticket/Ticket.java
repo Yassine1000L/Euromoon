@@ -23,7 +23,6 @@ public class Ticket {
     public Passagier getPassagier() {
         return passagier;
     }
-
     public Reis getReis() {
         return reis;
     }
